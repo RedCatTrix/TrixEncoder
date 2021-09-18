@@ -9,7 +9,7 @@ Encoder handling libraryes for Atmega328-based/Arduino Nano projects
  * Written for 16 MHz Atmega328p based projects (Arduino Nano), however can be used in other AVR-based platform
  *  
  * Version 1.0, initial publish date 17/09/2021
- * Author Dmitry V e-mail: RedCatTrix@yahoo.com
+ * Author Dmitry V e-mail: gem.ini@rambler.ru
  * To say Thanks and support me: PayPal (gem.ini@rambler.ru)  
  *   
  * Events support: rotation, key pressed rotation, fast rotation, single click, double click, key holding, custom click event
