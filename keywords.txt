@@ -1,0 +1,43 @@
+###################################
+# Syntax Coloring Map For TrixEncoder
+###################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+enc_begin	KEYWORD2
+enc_setFastTick_ms	KEYWORD2
+enc_setHoldDelay_ms	KEYWORD2
+enc_event	KEYWORD2
+enc_value	KEYWORD2
+enc_setKeyDoubleClick_ms	KEYWORD2
+enc_setKeySingleClick_ms	KEYWORD2
+enc_setValue	KEYWORD2
+enc_getClickDuration	KEYWORD2
+enc_eventOccurred	KEYWORD2
+enc_reset_event	KEYWORD2
+enc_tickEvent	KEYWORD2
+enc_bigStepMode	KEYWORD2
+enc_setBigStepOffset	KEYWORD2
+enc_setFastStepOffset	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+CUSTOM_CLICK	LITERAL1
+SINGLE_CLICK	LITERAL1
+DOUBLE_CLICK	LITERAL1
+LONG_CLICK	LITERAL1
+CWISE	LITERAL1
+CCWISE	LITERAL1
+FCWISE	LITERAL1
+FCCWISE	LITERAL1
+KCWISE	LITERAL1
+KCCWISE	LITERAL1
+UNDEFINED_STATE	LITERAL1
