@@ -1,6 +1,6 @@
 # TrixEncoder
 
-Encoder handling libraryes for Atmega328-based/Arduino Nano projects
+Encoder handling library for Atmega328-based/Arduino Nano projects
 
 /* TrixEncoder
  *  
@@ -22,7 +22,7 @@ Encoder handling libraryes for Atmega328-based/Arduino Nano projects
  * 5. The code quiet simple, can be changed easily by your own to meet your specific requirements 
  * 
  * 
- * This is the only connection so far:
+ * Arbitrary pin assignment automation unavailable. This is the only connection so far:
  * 
  * Encoder side       Arduno Nano side
  *    Vcc ------------------ +5V
