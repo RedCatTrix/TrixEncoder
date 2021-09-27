@@ -6,23 +6,26 @@ Encoder handling library for Atmega328-based/Arduino Nano projects
  *  
  * Lightweight library for rotary encoder with key (Rotary Encoder Module for reference https://ali.onl/1TNu)  
  * 
- * Written for 16 MHz Atmega328p based projects (Arduino Nano), however can be used in other AVR-based platform
+ * Version 1.1
+ * 
+ * Initial publish date 17/09/2021
+ * Distributed under GNU General Public License v3.0
+ * Author Dmitry V (RedCatTrix@yahoo.com), to say Thanks and support me: PayPal (gem.ini@rambler.ru)  
+ * 
+ * 
+ * Written for 16 MHz Atmega328p based projects (Arduino Nano), however it can be used in other AVR-based platform
  *  
- * Version 1.0, initial publish date 17/09/2021
- * Author Dmitry V e-mail: gem.ini@rambler.ru
- * To say Thanks and support me: PayPal (gem.ini@rambler.ru)  
- *   
  * Events support: rotation, key pressed rotation, fast rotation, single click, double click, key holding, custom click event
- *  
+ * 
  * Features:
  * 1. No-class library, saves a bit SRAM
  * 2. Based on PIN CHANGE INTERRUPT which allows waking up from sleep mode, valuable external INT0/INT1 remain available for other project purpose
  * 3. The main code implemented in the ISR section, hence the value and state preserved until being processed in your code, even with delay() etc
  * 4. ISR processing time takes up to 8.5 us or less for any encoder event
- * 5. The code quiet simple, can be changed easily by your own to meet your specific requirements 
+ * 5. The code quiet simple, can be change it easily by your own to meet your specific requirements 
  * 
  * 
- * Arbitrary pin assignment automation unavailable. This is the only connection so far:
+ * This is the only connection so far:
  * 
  * Encoder side       Arduno Nano side
  *    Vcc ------------------ +5V
@@ -32,7 +35,13 @@ Encoder handling library for Atmega328-based/Arduino Nano projects
  *    GND ------------------ GND
  *    
  * Of course you may change the library code, pins assignment, IRQ type and source etc
- */
+ * 
+ * Release history
+ * 
+ * v.1.0 - intitial issue
+ * v.1.1:
+ *  - PCINT initialization in enc_begin() method minor change
+ *  - License type noted in the header */
 
 
 Methods and constants description.
