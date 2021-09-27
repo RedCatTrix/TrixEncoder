@@ -2,14 +2,16 @@
  *  
  * Lightweight library for rotary encoder with key (Rotary Encoder Module for reference https://ali.onl/1TNu)  
  * 
- * Written for 16 MHz Atmega328p based projects (Arduino Nano), however can be used in other AVR-based platform
+ * Version 1.1
+ * 
+ * Initial publish date 17/09/2021
+ * Distributed under GNU General Public License v3.0
+ * Author Dmitry V (RedCatTrix@yahoo.com), to say Thanks and support me: PayPal (gem.ini@rambler.ru)  
  *  
- * Version 1.0, initial publish date 17/09/2021
- * Author Dmitry V (RedCatTrix@yahoo.com)
- * To say Thanks and support me: PayPal (gem.ini@rambler.ru)  
- *   
+ * Written for 16 MHz Atmega328p based projects (Arduino Nano), however it can be used in other AVR-based platform
+ *  
  * Events support: rotation, key pressed rotation, fast rotation, single click, double click, key holding, custom click event
- *  
+ * 
  * Features:
  * 1. No-class library, saves a bit SRAM
  * 2. Based on PIN CHANGE INTERRUPT which allows waking up from sleep mode, valuable external INT0/INT1 remain available for other project purpose
@@ -28,6 +30,13 @@
  *    GND ------------------ GND
  *    
  * Of course you may change the library code, pins assignment, IRQ type and source etc
+ * 
+ * Release history
+ * 
+ * v.1.0 - intitial issue
+ * v.1.1:
+ *  - PCINT initialization in enc_begin() method minor change
+ *  - License type noted in the header
  */
  
 #ifndef TrixEncoder_h
