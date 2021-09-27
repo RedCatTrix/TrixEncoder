@@ -42,7 +42,7 @@ extern "C" {
     pinMode(pin_key, INPUT_PULLUP);
     bitSet(PCICR, PCIE0); 
     // на пинах PIN_S1   и   PIN_KEY
-    PCMSK0 = _BV(PCINT1) | _BV(PCINT0);
+    PCMSK0 |= _BV(PCINT1) | _BV(PCINT0);
     _enc_mltp_step = true;
   }
 
