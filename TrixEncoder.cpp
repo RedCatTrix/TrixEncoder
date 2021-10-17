@@ -27,6 +27,10 @@ bool _enc_mltp_step;
 
 extern "C" {
 
+  bool enc_keyPressed() {
+    return encKeyPressed();
+  }
+
   uint16_t getTimeOffset(const uint32_t timestamp) {
     return (millis() - timestamp);
   }
@@ -94,9 +98,8 @@ extern "C" {
       goto label_out;
     }
     
-    if (enc_tickEvent()) enc_key_duration = 0;
-
   label_out:
+    if (enc_tickEvent()) enc_key_duration = 0;
     enc_irq = false;
     return _enc_event;
   }
