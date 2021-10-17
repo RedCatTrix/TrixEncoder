@@ -69,6 +69,8 @@ extern "C" {
   extern bool enc_tickEvent();
 
   extern void enc_bigStepMode(const bool mode_flag);
+ 
+  extern bool enc_keyPressed();
 
 #ifdef TRIX_ENC_ISR_CALC
 
