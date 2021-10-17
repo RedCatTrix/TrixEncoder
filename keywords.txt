@@ -25,7 +25,7 @@ enc_tickEvent	KEYWORD2
 enc_bigStepMode	KEYWORD2
 enc_setBigStepOffset	KEYWORD2
 enc_setFastStepOffset	KEYWORD2
-
+enc_keyPressed	KEYWORD2
 #######################################
 # Constants (LITERAL1)
 #######################################
