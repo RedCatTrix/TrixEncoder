@@ -19,10 +19,11 @@ Encoder handling library for Atmega328-based/Arduino Nano projects
  * 
  * Features:
  * 1. No-class library, saves a bit SRAM
- * 2. Based on PIN CHANGE INTERRUPT which allows waking up from sleep mode, valuable external INT0/INT1 remain available for other project purpose
- * 3. The main code implemented in the ISR section, hence the value and state preserved until being processed in your code, even with delay() etc
- * 4. ISR processing time takes up to 8.5 us or less for any encoder event
- * 5. The code quiet simple, can be change it easily by your own to meet your specific requirements 
+ * 2. No-timer implementation, doesn't occupy valuable AVR resources
+ * 3. Based on PIN CHANGE INTERRUPT which allows waking up from sleep mode, valuable external INT0/INT1 remain available for other project purpose
+ * 4. The main code implemented in the ISR section, hence the value and state preserved until being processed in your code, even with delay() etc
+ * 5. ISR processing time takes up to 8.5 us or less for any encoder event
+ * 6. The code quiet simple, can be change it easily by your own to meet your specific requirements 
  * 
  * 
  * This is the only connection so far:
@@ -98,9 +99,11 @@ void enc_setHoldDelay_ms(const uint16_t ms)
 uint16_t enc_getClickDuration()
   - define single click duration, default value 230 ms
   
-void enc_setKeyDoubleClick_ms(const uint16_t ms = 380);
+void enc_setKeyDoubleClick_ms(const uint16_t ms = 380)
   - define double click interval, default value 380 ms
-
+  
+bool enc_keyPressed()
+  - returns true if button pressed
 
 ISR performance on 16 MHz, encoder value calculation enabled
   Key ON        - 6.8 us
