@@ -68,7 +68,7 @@ extern "C" {
   
   extern bool enc_tickEvent();
 
-  extern void enc_bigStepMode(const bool mode_flag);
+  extern void enc_bigStepMode(const bool mode_flag = false);
  
   extern bool enc_keyPressed();
 
